@@ -1,16 +1,3 @@
-// import express from "express";
-// import ViteExpress from "vite-express";
-
-// require("dotenv").config();
-
-// const express = require("express"),
-//     { MongoClient, ServerApiVersion, ObjectId } = require("mongodb"),
-//     app = express();
-// const path = require("path");
-// const session = require("express-session");
-
-// const passport = require("passport");
-// const GitHubStrategy = require("passport-github2").Strategy;
 import "dotenv/config";
 import express from "express";
 import ViteExpress from "vite-express";
@@ -28,8 +15,7 @@ const app = express();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 app.use(express.static(path.join(__dirname,"../../public")));
-// Go up from the server folder, then into public
-// app.use(express.static(path.join(__dirname, "../client")));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
